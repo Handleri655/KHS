@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KHS LVI-Palvelu — Lämpö, vesi ja ilma</title>
+  <meta name="description" content="KHS LVI-Palvelu Oy tarjoaa kattavat LVI-palvelut Kankaanpäässä ja valtakunnallisesti. Lämpöpumput, asennukset, huollot ja suunnittelu.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/KHS_logo_web.png" type="image/png">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" aria-hidden="true">
+    <img src="assets/KHS_logo_web.png" alt="" class="preloader__logo">
+    <div class="preloader__bar"><div class="preloader__progress"></div></div>
+    <span class="preloader__text">Ladataan</span>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav nav--on-hero nav--at-top" aria-label="Päänavigaatio">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/KHS_logo_web.png" alt="KHS LVI-Palvelu">
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="active">Etusivu</a></li>
+        <li><a href="palvelut.html">Palvelut</a></li>
+        <li><a href="lammitysratkaisut.html">Lämmitysratkaisut</a></li>
+        <li><a href="referenssit.html">Referenssit</a></li>
+        <li><a href="laskutus.html">Laskutus</a></li>
+      </ul>
+      <div class="nav__contact-bar">
+        <a href="tel:+358405551669">040 555 1669</a>
+        <a href="mailto:khs@khs.fi">khs@khs.fi</a>
+      </div>
+      <a href="yhteystiedot.html" class="nav__cta">Ota yhteyttä</a>
+      <button class="nav__toggle" aria-label="Avaa valikko" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" aria-hidden="true">
+    <a href="index.html">Etusivu</a>
+    <a href="palvelut.html">Palvelut</a>
+    <a href="lammitysratkaisut.html">Lämmitysratkaisut</a>
+    <a href="referenssit.html">Referenssit</a>
+    <a href="laskutus.html">Laskutus</a>
+    <a href="yhteystiedot.html">Ota yhteyttä</a>
+    <div class="nav__mobile-contact">
+      <a href="tel:+358405551669">040 555 1669</a>
+      <a href="mailto:khs@khs.fi">khs@khs.fi</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="etusivu">
+    <canvas class="hero__canvas" id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero__gradient" aria-hidden="true"></div>
+    <div class="hero__grid" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <div class="hero__badge">Pohjois-Satakunta &middot; Kankaanpää</div>
+
+      <h1 class="hero__title">
+        <span class="word" style="animation-delay:2s">Lämpöä,</span>
+        <span class="word" style="animation-delay:2.12s">vettä</span>
+        <span class="word" style="animation-delay:2.24s">ja</span>
+        <span class="word highlight" style="animation-delay:2.36s">ilmaa</span>
+      </h1>
+
+      <p class="hero__subtitle">
+        Kattavat LVI-palvelut ammattitaidolla — hanan vaihdosta kokonaisiin urakoihin, paikallisesti ja valtakunnallisesti.
+      </p>
+
+      <div class="hero__actions">
+        <a href="yhteystiedot.html" class="btn btn--primary">
+          Pyydä tarjous
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="palvelut.html" class="btn btn--ghost">Tutustu palveluihin</a>
+      </div>
+
+      <div class="hero__stats">
+        <div>
+          <div class="hero__stat-num"><span data-count="15" data-suffix="+">0</span></div>
+          <div class="hero__stat-label">Vuotta kokemusta</div>
+        </div>
+        <div>
+          <div class="hero__stat-num"><span data-count="100" data-suffix="%">0</span></div>
+          <div class="hero__stat-label">Asiakaslähtöisyys</div>
+        </div>
+        <div>
+          <div class="hero__stat-num"><span data-count="24" data-suffix="/7">0</span></div>
+          <div class="hero__stat-label">Pikainen tavoitettavuus</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Vieritä</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="meista">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-visual__pattern"></div>
+          <div class="about-visual__content">
+            <img src="assets/KHS_logo_web.png" alt="KHS" class="about-visual__logo">
+            <p class="about-visual__tagline">LVI-palvelua sydämellä</p>
+          </div>
+        </div>
+        <div class="reveal">
+          <span class="section__label">Tietoa meistä</span>
+          <h2 class="section__title">Pohjoissatakuntalainen LVI-asiantuntija</h2>
+          <p class="section__desc">
+            KHS LVI-Palvelu Oy on pohjoissatakuntalainen yritys, joka tarjoaa kattavat LVI-palvelut niin paikallisesti Kankaanpäässä kuin valtakunnallisestikin. Toteutamme erilaiset LVI-työt asiakkaan yksilöllisen tarpeen mukaan.
+          </p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature__icon">🔧</div>
+              <div>
+                <h4>Huollot &amp; asennukset</h4>
+                <p>Huollot, laitetoimitukset, asennukset ja LVI-suunnittelut vankalla ammattitaidolla.</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature__icon">🏠</div>
+              <div>
+                <h4>Avaimet käteen</h4>
+                <p>Laitetoimitukset osatoimituksina tai asennettuna avaimet käteen -periaatteella.</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature__icon">📍</div>
+              <div>
+                <h4>Myymälä Kankaanpäässä</h4>
+                <p>Haanpäänkatu 7 — palvelemme teitä sovitusti.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section section--gray" id="palvelut">
+    <div class="container">
+      <div class="reveal" style="text-align:center; max-width:700px; margin:0 auto;">
+        <span class="section__label">Palvelut</span>
+        <h2 class="section__title">Kaikki LVI-työt yhdestä paikasta</h2>
+        <p class="section__desc" style="margin:0 auto;">
+          Olipa kyseessä hanan vaihto tai kokonainen LVI-urakka, hoidamme sen ammattitaidolla.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-card__icon">🌡️</div>
+          <h3>Lämmitysratkaisut</h3>
+          <p>Maalämpö, ilmalämpö ja ilmavesilämpö — suunnittelusta asennukseen avaimet käteen.</p>
+          <a href="lammitysratkaisut.html" class="service-card__link">
+            Lue lisää <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card__icon">💧</div>
+          <h3>Vesi &amp; viemäri</h3>
+          <p>Käyttövesiputket, viemärit ja hananvaihdot — pienistä huoltotöistä kokonaisurakoihin.</p>
+          <a href="palvelut.html" class="service-card__link">
+            Lue lisää <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card__icon">💨</div>
+          <h3>Ilmanvaihto &amp; LTO</h3>
+          <p>LTO-järjestelmät ja ilmanvaihtotyöt terveelliseen ja energiatehokkaaseen kiinteistöön.</p>
+          <a href="palvelut.html" class="service-card__link">
+            Lue lisää <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card__icon">📋</div>
+          <h3>LVI-suunnittelu</h3>
+          <p>Suunnitelmat, osat ja laitetoimitukset — yksityishenkilöille ja yrityksille.</p>
+          <a href="palvelut.html" class="service-card__link">
+            Lue lisää <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card__icon">🔥</div>
+          <h3>Biomassakattilat</h3>
+          <p>Korkealuokkaiset lämpöpumput ja biomassaratkaisut energiatehokkaaseen lämmitykseen.</p>
+          <a href="lammitysratkaisut.html" class="service-card__link">
+            Lue lisää <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-card__icon">🛠️</div>
+          <h3>Huolto &amp; varaosat</h3>
+          <p>Kiinteistö- ja LVI-huoltotyöt, tehdashuollot ja varaosien myynti.</p>
+          <a href="palvelut.html" class="service-card__link">
+            Lue lisää <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Heating -->
+  <section class="section section--dark" id="lammitys">
+    <div class="container">
+      <div class="reveal" style="text-align:center; max-width:700px; margin:0 auto;">
+        <span class="section__label">Lämmitysratkaisut</span>
+        <h2 class="section__title">Energiatehokasta lämpöä kotiin ja kiinteistöihin</h2>
+        <p class="section__desc" style="margin:0 auto;">
+          Tuotevalikoimaamme kuuluvat korkealuokkaiset lämpöpumput, LTO-järjestelmät ja biomassakattilat.
+        </p>
+      </div>
+
+      <div class="heating-showcase">
+        <div class="heating-card reveal">
+          <span class="heating-card__num">01</span>
+          <h3>Maalämpö</h3>
+          <p>Maalämpöpumput ovat erittäin suosittuja huolettomuutensa ja edullisen käyttönsä ansiosta. Sopii omakotitaloihin ja isompiin kiinteistöihin.</p>
+        </div>
+        <div class="heating-card reveal">
+          <span class="heating-card__num">02</span>
+          <h3>Ilmalämpö</h3>
+          <p>Ilmalämpöpumpulla voi lämmittää ja viilentää omakotitalon, mökin ja muut tilat energiaa säästäen.</p>
+        </div>
+        <div class="heating-card reveal">
+          <span class="heating-card__num">03</span>
+          <h3>Ilmavesilämpö</h3>
+          <p>Uudempaa teknologiaa — ei tarvita porakaivoa. Sopii vesikiertoisiin lämmitysjärjestelmiin.</p>
+        </div>
+      </div>
+
+      <div class="partners reveal">
+        <img src="assets/mitsubishi-logo.png" alt="Mitsubishi">
+        <img src="assets/scanvarm-logo.png" alt="Scanvarm">
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container reveal">
+      <div class="cta-banner">
+        <div class="cta-banner__content">
+          <h2>Mietitkö rahoitusta?</h2>
+          <p>Tutustu Jäspi-lämmitysrahoitukseen ja tee lämmitysratkaisusta helppo.</p>
+          <a href="https://jaspi.fi/rahoitus/" target="_blank" rel="noopener" class="btn btn--primary">
+            Jäspi-lämmitysrahoitus
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section--gray" id="yhteystiedot">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="reveal">
+          <span class="section__label">Yhteystiedot</span>
+          <h2 class="section__title">Ota yhteyttä</h2>
+          <p class="section__desc">Pikaisiin tarpeisiin tavoitat meidät puhelimitse. Jätä viesti tai soita suoraan!</p>
+
+          <div class="contact-info" style="margin-top:2rem;">
+            <div class="contact-card">
+              <div class="contact-card__label">Puhelin</div>
+              <a href="tel:+358405551669">040 555 1669</a>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card__label">Sähköposti</div>
+              <a href="mailto:khs@khs.fi">khs@khs.fi</a>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card__label">Osoite</div>
+              <p>Haanpäänkatu 7<br>38700 Kankaanpää</p>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card__label">Yhteyshenkilö</div>
+              <p>Heikki Saarikoski</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form reveal">
+          <h3>Ottakaa minuun yhteyttä!</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Nimi</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="contact">Sähköposti tai puhelinnumero</label>
+              <input type="text" id="contact" name="contact" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Viesti</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary" style="width:100%;">Lähetä viesti</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="assets/KHS_logo_web.png" alt="KHS LVI-Palvelu">
+          </div>
+          <p>KHS LVI-palvelu Oy tarjoaa kattavat LVI-palvelut Pohjois-Satakunnassa ja valtakunnallisesti.</p>
+        </div>
+        <div>
+          <h4>Sivut</h4>
+          <ul>
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="palvelut.html">Palvelut</a></li>
+            <li><a href="lammitysratkaisut.html">Lämmitysratkaisut</a></li>
+            <li><a href="referenssit.html">Referenssit</a></li>
+            <li><a href="laskutus.html">Laskutus</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Yhteystiedot</h4>
+          <ul>
+            <li><a href="tel:+358405551669">040 555 1669</a></li>
+            <li><a href="mailto:khs@khs.fi">khs@khs.fi</a></li>
+            <li>Haanpäänkatu 7</li>
+            <li>38700 Kankaanpää</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>KHS LVI-palvelu Oy &copy; 2026</span>
+        <span>Heikki Saarikoski</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
