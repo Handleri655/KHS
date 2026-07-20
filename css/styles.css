@@ -55,6 +55,22 @@ a {
   padding: 0 clamp(1.25rem, 4vw, 2.5rem);
 }
 
+.container--center {
+  display: flex;
+  justify-content: center;
+}
+
+.billing-card {
+  width: 100%;
+  max-width: 560px;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+}
+
+.billing-card .contact-cards {
+  text-align: left;
+}
+
 /* ─── Wordmark (no logo images) ─── */
 .wordmark {
   display: flex;
