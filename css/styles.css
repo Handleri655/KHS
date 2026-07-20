@@ -593,6 +593,85 @@ a {
   text-align: center;
 }
 
+/* Compact reviews block (e.g. contact page) */
+.reviews-inline {
+  margin-top: 4rem;
+  padding: 2.5rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.reviews-inline__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--slate);
+  margin-bottom: 1.25rem;
+}
+
+.reviews-inline__score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.reviews-inline__num {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.reviews-inline__stars {
+  display: flex;
+  gap: 3px;
+  color: var(--google-yellow);
+}
+
+.reviews-inline__stars svg {
+  width: 18px;
+  height: 18px;
+}
+
+.reviews-inline__count {
+  font-size: 0.875rem;
+  color: var(--slate);
+}
+
+.reviews-inline__quote {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.reviews-inline__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--copper);
+}
+
+.reviews-inline__link:hover { color: var(--ink); }
+
 /* ─── Sections ─── */
 .section {
   padding: clamp(5rem, 12vw, 8rem) 0;
