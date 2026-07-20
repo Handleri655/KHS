@@ -3,251 +3,238 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KHS LVI-Palvelu — Lämpö, vesi ja ilma</title>
-  <meta name="description" content="KHS LVI-Palvelu Oy tarjoaa kattavat LVI-palvelut Kankaanpäässä ja valtakunnallisesti. Lämpöpumput, asennukset, huollot ja suunnittelu.">
+  <title>KHS LVI-Palvelu — Premium LVI-palvelut Kankaanpäässä</title>
+  <meta name="description" content="KHS LVI-Palvelu Oy — ammattitaitoiset LVI-palvelut, lämpöpumput ja urakoinnit Pohjois-Satakunnassa. 5/5 Google-arvostelut.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="assets/KHS_logo_web.png" type="image/png">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect fill='%230c0e12' width='32' height='32' rx='4'/><text x='16' y='22' font-family='Georgia' font-size='14' fill='%23b8875a' text-anchor='middle'>K</text></svg>">
 </head>
 <body>
 
-  <!-- Preloader -->
-  <div class="preloader" aria-hidden="true">
-    <img src="assets/KHS_logo_web.png" alt="" class="preloader__logo">
-    <div class="preloader__bar"><div class="preloader__progress"></div></div>
-    <span class="preloader__text">Ladataan</span>
-  </div>
-
-  <!-- Navigation -->
-  <nav class="nav nav--on-hero nav--at-top" aria-label="Päänavigaatio">
+  <nav class="nav nav--dark" aria-label="Päänavigaatio">
     <div class="nav__inner">
-      <a href="index.html" class="nav__logo">
-        <img src="assets/KHS_logo_web.png" alt="KHS LVI-Palvelu">
+      <a href="index.html" class="wordmark wordmark--light" aria-label="KHS LVI-Palvelu etusivu">
+        <span class="wordmark__khs">KHS</span>
+        <span class="wordmark__sub">LVI-Palvelu</span>
       </a>
       <ul class="nav__links">
         <li><a href="index.html" class="active">Etusivu</a></li>
         <li><a href="palvelut.html">Palvelut</a></li>
-        <li><a href="lammitysratkaisut.html">Lämmitysratkaisut</a></li>
+        <li><a href="lammitysratkaisut.html">Lämmitys</a></li>
         <li><a href="referenssit.html">Referenssit</a></li>
         <li><a href="laskutus.html">Laskutus</a></li>
       </ul>
-      <div class="nav__contact-bar">
-        <a href="tel:+358405551669">040 555 1669</a>
-        <a href="mailto:khs@khs.fi">khs@khs.fi</a>
+      <div class="nav__right">
+        <a href="tel:+358405551669" class="nav__phone">040 555 1669</a>
+        <a href="yhteystiedot.html" class="btn btn--primary">Tarjouspyyntö</a>
+        <button class="nav__toggle" aria-label="Avaa valikko" aria-expanded="false"><span></span></button>
       </div>
-      <a href="yhteystiedot.html" class="nav__cta">Ota yhteyttä</a>
-      <button class="nav__toggle" aria-label="Avaa valikko" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
     </div>
   </nav>
 
   <div class="nav__mobile" aria-hidden="true">
     <a href="index.html">Etusivu</a>
     <a href="palvelut.html">Palvelut</a>
-    <a href="lammitysratkaisut.html">Lämmitysratkaisut</a>
+    <a href="lammitysratkaisut.html">Lämmitys</a>
     <a href="referenssit.html">Referenssit</a>
     <a href="laskutus.html">Laskutus</a>
-    <a href="yhteystiedot.html">Ota yhteyttä</a>
+    <a href="yhteystiedot.html">Yhteystiedot</a>
     <div class="nav__mobile-contact">
       <a href="tel:+358405551669">040 555 1669</a>
-      <a href="mailto:khs@khs.fi">khs@khs.fi</a>
     </div>
   </div>
 
-  <!-- Hero -->
-  <section class="hero" id="etusivu">
-    <canvas class="hero__canvas" id="hero-canvas" aria-hidden="true"></canvas>
-    <div class="hero__gradient" aria-hidden="true"></div>
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
     <div class="hero__grid" aria-hidden="true"></div>
+    <div class="hero__line" aria-hidden="true"></div>
 
     <div class="hero__content">
-      <div class="hero__badge">Pohjois-Satakunta &middot; Kankaanpää</div>
-
-      <h1 class="hero__title">
-        <span class="word" style="animation-delay:2s">Lämpöä,</span>
-        <span class="word" style="animation-delay:2.12s">vettä</span>
-        <span class="word" style="animation-delay:2.24s">ja</span>
-        <span class="word highlight" style="animation-delay:2.36s">ilmaa</span>
-      </h1>
-
-      <p class="hero__subtitle">
-        Kattavat LVI-palvelut ammattitaidolla — hanan vaihdosta kokonaisiin urakoihin, paikallisesti ja valtakunnallisesti.
-      </p>
-
+      <p class="hero__eyebrow">Pohjois-Satakunta · Kankaanpää</p>
+      <h1 class="hero__title">Premium LVI-palvelua<br><em>luotettavasti</em> vuodesta 2010</h1>
+      <p class="hero__lead">Huollot, asennukset, suunnittelu ja lämpöpumput — hanan vaihdosta kokonaisiin urakoihin, paikallisesti ja valtakunnallisesti.</p>
       <div class="hero__actions">
-        <a href="yhteystiedot.html" class="btn btn--primary">
-          Pyydä tarjous
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-        <a href="palvelut.html" class="btn btn--ghost">Tutustu palveluihin</a>
+        <a href="yhteystiedot.html" class="btn btn--primary">Pyydä tarjous</a>
+        <a href="palvelut.html" class="btn btn--outline">Palvelut</a>
       </div>
-
-      <div class="hero__stats">
-        <div>
-          <div class="hero__stat-num"><span data-count="15" data-suffix="+">0</span></div>
-          <div class="hero__stat-label">Vuotta kokemusta</div>
+      <div class="hero__metrics">
+        <div class="hero__metric">
+          <div class="hero__metric-value">5<span>,0</span></div>
+          <div class="hero__metric-label">Google-arvosana</div>
         </div>
-        <div>
-          <div class="hero__stat-num"><span data-count="100" data-suffix="%">0</span></div>
-          <div class="hero__stat-label">Asiakaslähtöisyys</div>
+        <div class="hero__metric">
+          <div class="hero__metric-value">2010</div>
+          <div class="hero__metric-label">Perustettu</div>
         </div>
-        <div>
-          <div class="hero__stat-num"><span data-count="24" data-suffix="/7">0</span></div>
-          <div class="hero__stat-label">Pikainen tavoitettavuus</div>
+        <div class="hero__metric">
+          <div class="hero__metric-value">24<span>/7</span></div>
+          <div class="hero__metric-label">Pikainen tavoitettavuus</div>
         </div>
       </div>
-    </div>
-
-    <div class="hero__scroll" aria-hidden="true">
-      <span>Vieritä</span>
-      <div class="hero__scroll-line"></div>
     </div>
   </section>
 
   <!-- About -->
-  <section class="section" id="meista">
+  <section class="section">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-visual reveal">
-          <div class="about-visual__pattern"></div>
-          <div class="about-visual__content">
-            <img src="assets/KHS_logo_web.png" alt="KHS" class="about-visual__logo">
-            <p class="about-visual__tagline">LVI-palvelua sydämellä</p>
-          </div>
-        </div>
-        <div class="reveal">
-          <span class="section__label">Tietoa meistä</span>
+      <div class="reveal" style="max-width:720px">
+          <p class="section__eyebrow">Tietoa meistä</p>
           <h2 class="section__title">Pohjoissatakuntalainen LVI-asiantuntija</h2>
-          <p class="section__desc">
-            KHS LVI-Palvelu Oy on pohjoissatakuntalainen yritys, joka tarjoaa kattavat LVI-palvelut niin paikallisesti Kankaanpäässä kuin valtakunnallisestikin. Toteutamme erilaiset LVI-työt asiakkaan yksilöllisen tarpeen mukaan.
-          </p>
-          <div class="about-features">
-            <div class="about-feature">
-              <div class="about-feature__icon">🔧</div>
-              <div>
-                <h4>Huollot &amp; asennukset</h4>
-                <p>Huollot, laitetoimitukset, asennukset ja LVI-suunnittelut vankalla ammattitaidolla.</p>
-              </div>
+          <p class="section__desc">KHS LVI-Palvelu Oy tarjoaa kattavat LVI-palvelut Kankaanpäässä ja valtakunnallisesti. Toteutamme työt asiakkaan yksilöllisen tarpeen mukaan — huollot, laitetoimitukset, asennukset ja suunnittelut vankalla ammattitaidolla.</p>
+          <div class="split__stat-row">
+            <div class="split__stat">
+              <div class="split__stat-value">Avaimet käteen</div>
+              <div class="split__stat-label">Kokonaistoimitukset tai osatoimitukset</div>
             </div>
-            <div class="about-feature">
-              <div class="about-feature__icon">🏠</div>
-              <div>
-                <h4>Avaimet käteen</h4>
-                <p>Laitetoimitukset osatoimituksina tai asennettuna avaimet käteen -periaatteella.</p>
-              </div>
-            </div>
-            <div class="about-feature">
-              <div class="about-feature__icon">📍</div>
-              <div>
-                <h4>Myymälä Kankaanpäässä</h4>
-                <p>Haanpäänkatu 7 — palvelemme teitä sovitusti.</p>
-              </div>
+            <div class="split__stat">
+              <div class="split__stat-value">Haanpäänkatu 7</div>
+              <div class="split__stat-label">Myymälä Kankaanpäässä</div>
             </div>
           </div>
-        </div>
       </div>
     </div>
   </section>
 
   <!-- Services -->
-  <section class="section section--gray" id="palvelut">
+  <section class="section section--warm" id="palvelut">
     <div class="container">
-      <div class="reveal" style="text-align:center; max-width:700px; margin:0 auto;">
-        <span class="section__label">Palvelut</span>
+      <div class="section__head section__head--center reveal">
+        <p class="section__eyebrow">Palvelut</p>
         <h2 class="section__title">Kaikki LVI-työt yhdestä paikasta</h2>
-        <p class="section__desc" style="margin:0 auto;">
-          Olipa kyseessä hanan vaihto tai kokonainen LVI-urakka, hoidamme sen ammattitaidolla.
-        </p>
+        <p class="section__desc">Olipa kyseessä hanan vaihto tai kokonainen LVI-urakka — hoidamme sen ammattitaidolla.</p>
       </div>
-
-      <div class="services-grid">
-        <div class="service-card reveal">
-          <div class="service-card__icon">🌡️</div>
+      <div class="services-grid reveal">
+        <div class="service-item">
+          <div class="service-item__num">01</div>
           <h3>Lämmitysratkaisut</h3>
-          <p>Maalämpö, ilmalämpö ja ilmavesilämpö — suunnittelusta asennukseen avaimet käteen.</p>
-          <a href="lammitysratkaisut.html" class="service-card__link">
-            Lue lisää <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <p>Maalämpö, ilmalämpö ja ilmavesilämpö — suunnittelusta asennukseen.</p>
+          <a href="lammitysratkaisut.html" class="service-item__link">Lue lisää →</a>
         </div>
-        <div class="service-card reveal">
-          <div class="service-card__icon">💧</div>
+        <div class="service-item">
+          <div class="service-item__num">02</div>
           <h3>Vesi &amp; viemäri</h3>
-          <p>Käyttövesiputket, viemärit ja hananvaihdot — pienistä huoltotöistä kokonaisurakoihin.</p>
-          <a href="palvelut.html" class="service-card__link">
-            Lue lisää <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <p>Käyttövesiputket, viemärit ja hananvaihdot pienistä urakoista kokonaisuuksiin.</p>
+          <a href="palvelut.html" class="service-item__link">Lue lisää →</a>
         </div>
-        <div class="service-card reveal">
-          <div class="service-card__icon">💨</div>
+        <div class="service-item">
+          <div class="service-item__num">03</div>
           <h3>Ilmanvaihto &amp; LTO</h3>
-          <p>LTO-järjestelmät ja ilmanvaihtotyöt terveelliseen ja energiatehokkaaseen kiinteistöön.</p>
-          <a href="palvelut.html" class="service-card__link">
-            Lue lisää <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <p>LTO-järjestelmät ja poistoilmalämmön talteenotto energiatehokkuuteen.</p>
+          <a href="palvelut.html" class="service-item__link">Lue lisää →</a>
         </div>
-        <div class="service-card reveal">
-          <div class="service-card__icon">📋</div>
+        <div class="service-item">
+          <div class="service-item__num">04</div>
           <h3>LVI-suunnittelu</h3>
-          <p>Suunnitelmat, osat ja laitetoimitukset — yksityishenkilöille ja yrityksille.</p>
-          <a href="palvelut.html" class="service-card__link">
-            Lue lisää <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <p>Suunnitelmat, osat ja laitetoimitukset yksityis- ja yritysasiakkaille.</p>
+          <a href="palvelut.html" class="service-item__link">Lue lisää →</a>
         </div>
-        <div class="service-card reveal">
-          <div class="service-card__icon">🔥</div>
+        <div class="service-item">
+          <div class="service-item__num">05</div>
           <h3>Biomassakattilat</h3>
-          <p>Korkealuokkaiset lämpöpumput ja biomassaratkaisut energiatehokkaaseen lämmitykseen.</p>
-          <a href="lammitysratkaisut.html" class="service-card__link">
-            Lue lisää <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <p>Korkealuokkaiset lämpöpumput ja biomassaratkaisut.</p>
+          <a href="lammitysratkaisut.html" class="service-item__link">Lue lisää →</a>
         </div>
-        <div class="service-card reveal">
-          <div class="service-card__icon">🛠️</div>
+        <div class="service-item">
+          <div class="service-item__num">06</div>
           <h3>Huolto &amp; varaosat</h3>
-          <p>Kiinteistö- ja LVI-huoltotyöt, tehdashuollot ja varaosien myynti.</p>
-          <a href="palvelut.html" class="service-card__link">
-            Lue lisää <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <p>Kiinteistö- ja tehdashuollot sekä varaosien myynti.</p>
+          <a href="palvelut.html" class="service-item__link">Lue lisää →</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Heating -->
-  <section class="section section--dark" id="lammitys">
+  <section class="section section--dark">
     <div class="container">
-      <div class="reveal" style="text-align:center; max-width:700px; margin:0 auto;">
-        <span class="section__label">Lämmitysratkaisut</span>
-        <h2 class="section__title">Energiatehokasta lämpöä kotiin ja kiinteistöihin</h2>
-        <p class="section__desc" style="margin:0 auto;">
-          Tuotevalikoimaamme kuuluvat korkealuokkaiset lämpöpumput, LTO-järjestelmät ja biomassakattilat.
-        </p>
+      <div class="section__head reveal">
+        <p class="section__eyebrow">Lämmitys</p>
+        <h2 class="section__title">Energiatehokasta lämpöä</h2>
+        <p class="section__desc">Myymme ja asennamme maalämpö-, ilmalämpö- ja ilmavesilämpöpumput avaimet käteen -periaatteella.</p>
       </div>
-
-      <div class="heating-showcase">
-        <div class="heating-card reveal">
-          <span class="heating-card__num">01</span>
+      <div class="heating-grid reveal">
+        <div class="heating-card">
           <h3>Maalämpö</h3>
-          <p>Maalämpöpumput ovat erittäin suosittuja huolettomuutensa ja edullisen käyttönsä ansiosta. Sopii omakotitaloihin ja isompiin kiinteistöihin.</p>
+          <p>Huoleton ja edullinen käyttö. Sopii omakotitaloihin ja isompiin kiinteistöihin.</p>
         </div>
-        <div class="heating-card reveal">
-          <span class="heating-card__num">02</span>
+        <div class="heating-card">
           <h3>Ilmalämpö</h3>
-          <p>Ilmalämpöpumpulla voi lämmittää ja viilentää omakotitalon, mökin ja muut tilat energiaa säästäen.</p>
+          <p>Lämmitys ja viilennys yhdellä laitteella — energiaa säästäen.</p>
         </div>
-        <div class="heating-card reveal">
-          <span class="heating-card__num">03</span>
+        <div class="heating-card">
           <h3>Ilmavesilämpö</h3>
-          <p>Uudempaa teknologiaa — ei tarvita porakaivoa. Sopii vesikiertoisiin lämmitysjärjestelmiin.</p>
+          <p>Vesikiertoinen lämmitys ilman porakaivoa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Reviews -->
+  <section class="reviews" id="arvostelut" aria-labelledby="reviews-title">
+    <div class="container">
+      <div class="reviews__header reveal">
+        <div>
+          <div class="reviews__google-badge">
+            <svg class="reviews__google-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+            </svg>
+            <span class="reviews__google-label">Arvostelut Googlesta</span>
+          </div>
+          <h2 class="section__title" id="reviews-title">Asiakkaidemme kokemuksia</h2>
+          <p class="section__desc">KHS LVI-Palvelu on saanut erinomaisia arvosteluja Google Mapsissa.</p>
+        </div>
+        <div class="reviews__score">
+          <span class="reviews__score-num">5,0</span>
+          <div>
+            <div class="reviews__stars" aria-label="5 tähteä 5:stä">
+              <svg class="reviews__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="reviews__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="reviews__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="reviews__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="reviews__star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="reviews__count">2 arvostelua · Google Maps</p>
+          </div>
         </div>
       </div>
 
-      <div class="partners reveal">
-        <img src="assets/mitsubishi-logo.png" alt="Mitsubishi">
-        <img src="assets/scanvarm-logo.png" alt="Scanvarm">
+      <div class="reviews__grid reviews__grid--single">
+        <article class="review-card reveal">
+          <div class="review-card__top">
+            <div class="review-card__author">
+              <div class="review-card__avatar" aria-hidden="true">G</div>
+              <div>
+                <div class="review-card__name">Google-käyttäjä</div>
+                <div class="review-card__meta">Google Maps · 5/5</div>
+              </div>
+            </div>
+            <div class="review-card__stars" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+          </div>
+          <blockquote class="review-card__text">"Erittäin miellyttävää ja hyvää, ammattitaitoista palvelua. Koin ehkä parasta palvelua mitä voi kokea."</blockquote>
+          <span class="review-card__source">
+            <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+            Julkaistu Google Mapsissa
+          </span>
+        </article>
+      </div>
+
+      <p class="reviews__note reveal">Yrityksellä on Google Mapsissa 2 arvostelua, keskiarvo 5,0/5.</p>
+
+      <div class="reviews__cta reveal">
+        <a href="https://www.google.com/maps/search/?api=1&query=KHS+LVI-Palvelu+Oy+Haanp%C3%A4%C3%A4nkatu+7+Kankaanp%C3%A4%C3%A4" target="_blank" rel="noopener noreferrer" class="btn btn--dark">
+          Katso arvostelut Google Mapsissa
+        </a>
       </div>
     </div>
   </section>
@@ -255,29 +242,25 @@
   <!-- CTA -->
   <section class="section">
     <div class="container reveal">
-      <div class="cta-banner">
-        <div class="cta-banner__content">
+      <div class="cta">
+        <div class="cta__inner">
           <h2>Mietitkö rahoitusta?</h2>
-          <p>Tutustu Jäspi-lämmitysrahoitukseen ja tee lämmitysratkaisusta helppo.</p>
-          <a href="https://jaspi.fi/rahoitus/" target="_blank" rel="noopener" class="btn btn--primary">
-            Jäspi-lämmitysrahoitus
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-          </a>
+          <p>Tutustu Jäspi-lämmitysrahoitukseen ja tee investoinnista helppo.</p>
+          <a href="https://jaspi.fi/rahoitus/" target="_blank" rel="noopener" class="btn btn--primary">Jäspi-lämmitysrahoitus</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section class="section section--gray" id="yhteystiedot">
+  <section class="section section--warm" id="yhteystiedot">
     <div class="container">
       <div class="contact-grid">
         <div class="reveal">
-          <span class="section__label">Yhteystiedot</span>
+          <p class="section__eyebrow">Yhteystiedot</p>
           <h2 class="section__title">Ota yhteyttä</h2>
-          <p class="section__desc">Pikaisiin tarpeisiin tavoitat meidät puhelimitse. Jätä viesti tai soita suoraan!</p>
-
-          <div class="contact-info" style="margin-top:2rem;">
+          <p class="section__desc">Pikaisiin tarpeisiin tavoitat meidät puhelimitse. Heikki Saarikoski palvelee henkilökohtaisesti.</p>
+          <div class="contact-cards" style="margin-top:2rem">
             <div class="contact-card">
               <div class="contact-card__label">Puhelin</div>
               <a href="tel:+358405551669">040 555 1669</a>
@@ -288,53 +271,52 @@
             </div>
             <div class="contact-card">
               <div class="contact-card__label">Osoite</div>
-              <p>Haanpäänkatu 7<br>38700 Kankaanpää</p>
-            </div>
-            <div class="contact-card">
-              <div class="contact-card__label">Yhteyshenkilö</div>
-              <p>Heikki Saarikoski</p>
+              <p>Haanpäänkatu 7, 38700 Kankaanpää</p>
             </div>
           </div>
         </div>
-
         <div class="contact-form reveal">
-          <h3>Ottakaa minuun yhteyttä!</h3>
+          <h3>Ottakaa minuun yhteyttä</h3>
           <form id="contact-form">
             <div class="form-group">
               <label for="name">Nimi</label>
               <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
-              <label for="contact">Sähköposti tai puhelinnumero</label>
+              <label for="contact">Sähköposti tai puhelin</label>
               <input type="text" id="contact" name="contact" required>
             </div>
             <div class="form-group">
               <label for="message">Viesti</label>
               <textarea id="message" name="message" required></textarea>
             </div>
-            <button type="submit" class="btn btn--primary" style="width:100%;">Lähetä viesti</button>
+            <button type="submit" class="btn btn--primary" style="width:100%">Lähetä viesti</button>
           </form>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
-          <div class="footer__logo">
-            <img src="assets/KHS_logo_web.png" alt="KHS LVI-Palvelu">
+          <div class="wordmark wordmark--light">
+            <span class="wordmark__khs">KHS</span>
+            <span class="wordmark__sub">LVI-Palvelu</span>
           </div>
-          <p>KHS LVI-palvelu Oy tarjoaa kattavat LVI-palvelut Pohjois-Satakunnassa ja valtakunnallisesti.</p>
+          <p>Premium LVI-palvelut Pohjois-Satakunnassa ja valtakunnallisesti vuodesta 2010.</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=KHS+LVI-Palvelu+Oy+Kankaanp%C3%A4%C3%A4" target="_blank" rel="noopener" class="footer__rating">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            5,0 · 2 Google-arvostelua
+          </a>
         </div>
         <div>
           <h4>Sivut</h4>
           <ul>
             <li><a href="index.html">Etusivu</a></li>
             <li><a href="palvelut.html">Palvelut</a></li>
-            <li><a href="lammitysratkaisut.html">Lämmitysratkaisut</a></li>
+            <li><a href="lammitysratkaisut.html">Lämmitys</a></li>
             <li><a href="referenssit.html">Referenssit</a></li>
             <li><a href="laskutus.html">Laskutus</a></li>
           </ul>
@@ -350,7 +332,7 @@
         </div>
       </div>
       <div class="footer__bottom">
-        <span>KHS LVI-palvelu Oy &copy; 2026</span>
+        <span>KHS LVI-palvelu Oy © 2026</span>
         <span>Heikki Saarikoski</span>
       </div>
     </div>

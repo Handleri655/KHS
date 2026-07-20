@@ -4,45 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Referenssit — KHS LVI-Palvelu</title>
-  <meta name="description" content="KHS LVI-Palvelun referenssit — toteutettuja LVI- ja lämmitysprojekteja Kankaanpäässä ja Satakunnassa.">
+  <meta name="description" content="Toteutettuja LVI- ja lämmitysprojekteja Kankaanpäässä ja Satakunnassa.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="assets/KHS_logo_web.png" type="image/png">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect fill='%230c0e12' width='32' height='32' rx='4'/><text x='16' y='22' font-family='Georgia' font-size='14' fill='%23b8875a' text-anchor='middle'>K</text></svg>">
 </head>
 <body>
 
-  <nav class="nav nav--on-hero nav--at-top" aria-label="Päänavigaatio">
+  <nav class="nav nav--dark" aria-label="Päänavigaatio">
     <div class="nav__inner">
-      <a href="index.html" class="nav__logo"><img src="assets/KHS_logo_web.png" alt="KHS LVI-Palvelu"></a>
+      <a href="index.html" class="wordmark wordmark--light"><span class="wordmark__khs">KHS</span><span class="wordmark__sub">LVI-Palvelu</span></a>
       <ul class="nav__links">
         <li><a href="index.html">Etusivu</a></li>
         <li><a href="palvelut.html">Palvelut</a></li>
-        <li><a href="lammitysratkaisut.html">Lämmitysratkaisut</a></li>
+        <li><a href="lammitysratkaisut.html">Lämmitys</a></li>
         <li><a href="referenssit.html" class="active">Referenssit</a></li>
         <li><a href="laskutus.html">Laskutus</a></li>
       </ul>
-      <div class="nav__contact-bar">
-        <a href="tel:+358405551669">040 555 1669</a>
-        <a href="mailto:khs@khs.fi">khs@khs.fi</a>
+      <div class="nav__right">
+        <a href="tel:+358405551669" class="nav__phone">040 555 1669</a>
+        <a href="yhteystiedot.html" class="btn btn--primary">Tarjouspyyntö</a>
+        <button class="nav__toggle" aria-label="Avaa valikko" aria-expanded="false"><span></span></button>
       </div>
-      <a href="yhteystiedot.html" class="nav__cta">Ota yhteyttä</a>
-      <button class="nav__toggle" aria-label="Avaa valikko" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
   <div class="nav__mobile" aria-hidden="true">
-    <a href="index.html">Etusivu</a>
-    <a href="palvelut.html">Palvelut</a>
-    <a href="lammitysratkaisut.html">Lämmitysratkaisut</a>
-    <a href="referenssit.html">Referenssit</a>
-    <a href="laskutus.html">Laskutus</a>
-    <a href="yhteystiedot.html">Ota yhteyttä</a>
-    <div class="nav__mobile-contact">
-      <a href="tel:+358405551669">040 555 1669</a>
-      <a href="mailto:khs@khs.fi">khs@khs.fi</a>
-    </div>
+    <a href="index.html">Etusivu</a><a href="palvelut.html">Palvelut</a><a href="lammitysratkaisut.html">Lämmitys</a>
+    <a href="referenssit.html">Referenssit</a><a href="laskutus.html">Laskutus</a><a href="yhteystiedot.html">Yhteystiedot</a>
+    <div class="nav__mobile-contact"><a href="tel:+358405551669">040 555 1669</a></div>
   </div>
 
   <header class="page-hero">
@@ -52,72 +44,49 @@
     </div>
   </header>
 
-  <main class="content-page">
+  <main class="section">
     <div class="container">
-      <div class="refs-timeline">
-        <div class="refs-year reveal">
-          <h3>2020</h3>
-          <ul class="refs-list">
-            <li class="refs-item">
-              <strong>Hakoniemen leirikeskus, Kankaanpään seurakunta</strong>
-              <ul class="refs-sub">
-                <li>Henkilökunnan asunnon kytkeminen maalämpöön</li>
-                <li>Maalämpö v. 2017</li>
-              </ul>
-            </li>
-            <li class="refs-item"><strong>Ravintola Cook, Kankaanpää</strong></li>
-            <li class="refs-item">
-              <strong>Sarvannonkatu, Kankaanpää</strong>
-              <ul class="refs-sub"><li>Paritalon maalämpö</li></ul>
-            </li>
-            <li class="refs-item">
-              <strong>Teollisuushalli 400 m², Kankaanpää</strong>
-              <ul class="refs-sub"><li>Ilmavesilämpöpumppu</li></ul>
-            </li>
-          </ul>
-        </div>
-        <div class="refs-year reveal">
-          <h3>2019</h3>
-          <ul class="refs-list">
-            <li class="refs-item">
-              <strong>Kivenkatu, Satakunnan kiinteistökehitys Oy</strong>
-              <ul class="refs-sub">
-                <li>Huoneistojen saneeraus</li>
-                <li>Poistoilmalämmön talteenotto</li>
-              </ul>
-            </li>
-            <li class="refs-item">
-              <strong>Kiinteistö Oy Kivipohja</strong>
-              <ul class="refs-sub">
-                <li>Huoneistojen saneeraus</li>
-                <li>IV-työt</li>
-              </ul>
-            </li>
-            <li class="refs-item">
-              <strong>Honka Trading Oy</strong>
-              <ul class="refs-sub">
-                <li>Lämmityskattilat</li>
-                <li>Kiinteistö- ja LVI-huoltotyöt</li>
-              </ul>
-            </li>
-            <li class="refs-item">
-              <strong>Kingspan Insulation Oy</strong>
-              <ul class="refs-sub"><li>Tehdashuolto</li></ul>
-            </li>
-            <li class="refs-item">
-              <strong>Teollisuushalli 200 m², Kankaanpää</strong>
-              <ul class="refs-sub"><li>Ilmavesilämpöpumppu</li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="cta-banner reveal" style="margin-top:2rem;">
-        <div class="cta-banner__content">
-          <h2>Haluatko samanlaisen ratkaisun?</h2>
-          <p>Ota yhteyttä ja keskustellaan projektistasi.</p>
-          <a href="yhteystiedot.html" class="btn btn--primary">Ota yhteyttä</a>
-        </div>
-      </div>
+      <ul class="refs-list reveal">
+        <li class="refs-item">
+          <div class="refs-item__year">2020</div>
+          <div>
+            <h4>Hakoniemen leirikeskus, Kankaanpään seurakunta</h4>
+            <ul><li>Henkilökunnan asunnon kytkeminen maalämpöön</li><li>Maalämpö v. 2017</li></ul>
+          </div>
+        </li>
+        <li class="refs-item">
+          <div class="refs-item__year">2020</div>
+          <div><h4>Ravintola Cook, Kankaanpää</h4></div>
+        </li>
+        <li class="refs-item">
+          <div class="refs-item__year">2020</div>
+          <div><h4>Sarvannonkatu, Kankaanpää</h4><ul><li>Paritalon maalämpö</li></ul></div>
+        </li>
+        <li class="refs-item">
+          <div class="refs-item__year">2020</div>
+          <div><h4>Teollisuushalli 400 m², Kankaanpää</h4><ul><li>Ilmavesilämpöpumppu</li></ul></div>
+        </li>
+        <li class="refs-item">
+          <div class="refs-item__year">2019</div>
+          <div><h4>Kivenkatu, Satakunnan kiinteistökehitys Oy</h4><ul><li>Huoneistojen saneeraus</li><li>Poistoilmalämmön talteenotto</li></ul></div>
+        </li>
+        <li class="refs-item">
+          <div class="refs-item__year">2019</div>
+          <div><h4>Kiinteistö Oy Kivipohja</h4><ul><li>Huoneistojen saneeraus</li><li>IV-työt</li></ul></div>
+        </li>
+        <li class="refs-item">
+          <div class="refs-item__year">2019</div>
+          <div><h4>Honka Trading Oy</h4><ul><li>Lämmityskattilat</li><li>Kiinteistö- ja LVI-huoltotyöt</li></ul></div>
+        </li>
+        <li class="refs-item">
+          <div class="refs-item__year">2019</div>
+          <div><h4>Kingspan Insulation Oy</h4><ul><li>Tehdashuolto</li></ul></div>
+        </li>
+        <li class="refs-item">
+          <div class="refs-item__year">2019</div>
+          <div><h4>Teollisuushalli 200 m², Kankaanpää</h4><ul><li>Ilmavesilämpöpumppu</li></ul></div>
+        </li>
+      </ul>
     </div>
   </main>
 
@@ -125,35 +94,16 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
-          <div class="footer__logo"><img src="assets/KHS_logo_web.png" alt="KHS LVI-Palvelu"></div>
-          <p>KHS LVI-palvelu Oy tarjoaa kattavat LVI-palvelut Pohjois-Satakunnassa ja valtakunnallisesti.</p>
+          <div class="wordmark wordmark--light"><span class="wordmark__khs">KHS</span><span class="wordmark__sub">LVI-Palvelu</span></div>
+          <p>Premium LVI-palvelut Pohjois-Satakunnassa.</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=KHS+LVI-Palvelu+Oy+Kankaanp%C3%A4%C3%A4" target="_blank" rel="noopener" class="footer__rating"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>5,0 · 2 Google-arvostelua</a>
         </div>
-        <div>
-          <h4>Sivut</h4>
-          <ul>
-            <li><a href="index.html">Etusivu</a></li>
-            <li><a href="palvelut.html">Palvelut</a></li>
-            <li><a href="lammitysratkaisut.html">Lämmitysratkaisut</a></li>
-            <li><a href="referenssit.html">Referenssit</a></li>
-            <li><a href="laskutus.html">Laskutus</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Yhteystiedot</h4>
-          <ul>
-            <li><a href="tel:+358405551669">040 555 1669</a></li>
-            <li><a href="mailto:khs@khs.fi">khs@khs.fi</a></li>
-            <li>Haanpäänkatu 7, 38700 Kankaanpää</li>
-          </ul>
-        </div>
+        <div><h4>Sivut</h4><ul><li><a href="index.html">Etusivu</a></li><li><a href="palvelut.html">Palvelut</a></li><li><a href="lammitysratkaisut.html">Lämmitys</a></li><li><a href="referenssit.html">Referenssit</a></li><li><a href="laskutus.html">Laskutus</a></li></ul></div>
+        <div><h4>Yhteystiedot</h4><ul><li><a href="tel:+358405551669">040 555 1669</a></li><li><a href="mailto:khs@khs.fi">khs@khs.fi</a></li><li>Haanpäänkatu 7, Kankaanpää</li></ul></div>
       </div>
-      <div class="footer__bottom">
-        <span>KHS LVI-palvelu Oy &copy; 2026</span>
-        <span>Heikki Saarikoski</span>
-      </div>
+      <div class="footer__bottom"><span>KHS LVI-palvelu Oy © 2026</span><span>Heikki Saarikoski</span></div>
     </div>
   </footer>
-
   <script src="js/main.js"></script>
 </body>
 </html>

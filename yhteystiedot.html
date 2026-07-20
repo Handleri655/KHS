@@ -7,99 +7,96 @@
   <meta name="description" content="Ota yhteyttä KHS LVI-Palveluun — 040 555 1669, khs@khs.fi, Haanpäänkatu 7, Kankaanpää.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="assets/KHS_logo_web.png" type="image/png">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect fill='%230c0e12' width='32' height='32' rx='4'/><text x='16' y='22' font-family='Georgia' font-size='14' fill='%23b8875a' text-anchor='middle'>K</text></svg>">
 </head>
 <body>
 
-  <nav class="nav nav--on-hero nav--at-top" aria-label="Päänavigaatio">
+  <nav class="nav nav--dark" aria-label="Päänavigaatio">
     <div class="nav__inner">
-      <a href="index.html" class="nav__logo"><img src="assets/KHS_logo_web.png" alt="KHS LVI-Palvelu"></a>
+      <a href="index.html" class="wordmark wordmark--light"><span class="wordmark__khs">KHS</span><span class="wordmark__sub">LVI-Palvelu</span></a>
       <ul class="nav__links">
         <li><a href="index.html">Etusivu</a></li>
         <li><a href="palvelut.html">Palvelut</a></li>
-        <li><a href="lammitysratkaisut.html">Lämmitysratkaisut</a></li>
+        <li><a href="lammitysratkaisut.html">Lämmitys</a></li>
         <li><a href="referenssit.html">Referenssit</a></li>
         <li><a href="laskutus.html">Laskutus</a></li>
       </ul>
-      <div class="nav__contact-bar">
-        <a href="tel:+358405551669">040 555 1669</a>
-        <a href="mailto:khs@khs.fi">khs@khs.fi</a>
+      <div class="nav__right">
+        <a href="tel:+358405551669" class="nav__phone">040 555 1669</a>
+        <a href="yhteystiedot.html" class="btn btn--primary">Tarjouspyyntö</a>
+        <button class="nav__toggle" aria-label="Avaa valikko" aria-expanded="false"><span></span></button>
       </div>
-      <a href="yhteystiedot.html" class="nav__cta">Ota yhteyttä</a>
-      <button class="nav__toggle" aria-label="Avaa valikko" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
   <div class="nav__mobile" aria-hidden="true">
-    <a href="index.html">Etusivu</a>
-    <a href="palvelut.html">Palvelut</a>
-    <a href="lammitysratkaisut.html">Lämmitysratkaisut</a>
-    <a href="referenssit.html">Referenssit</a>
-    <a href="laskutus.html">Laskutus</a>
-    <a href="yhteystiedot.html">Ota yhteyttä</a>
-    <div class="nav__mobile-contact">
-      <a href="tel:+358405551669">040 555 1669</a>
-      <a href="mailto:khs@khs.fi">khs@khs.fi</a>
-    </div>
+    <a href="index.html">Etusivu</a><a href="palvelut.html">Palvelut</a><a href="lammitysratkaisut.html">Lämmitys</a>
+    <a href="referenssit.html">Referenssit</a><a href="laskutus.html">Laskutus</a><a href="yhteystiedot.html">Yhteystiedot</a>
+    <div class="nav__mobile-contact"><a href="tel:+358405551669">040 555 1669</a></div>
   </div>
 
   <header class="page-hero">
     <div class="container">
       <h1>Ota yhteyttä</h1>
-      <p>Olemme tavoitettavissa puhelimitse, sähköpostilla tai yhteydenottolomakkeella.</p>
+      <p>Heikki Saarikoski palvelee henkilökohtaisesti — puhelimitse, sähköpostilla tai lomakkeella.</p>
     </div>
   </header>
 
-  <main class="content-page">
+  <main class="section">
     <div class="container">
       <div class="contact-grid">
         <div class="reveal">
-          <h2 class="section__title" style="margin-bottom:1rem;">KHS LVI-palvelu Oy</h2>
-          <p class="section__desc">Pikaisiin tarpeisiin tavoitat meidät puhelimitse. Myymälämme palvelee sovitusti.</p>
-          <div class="contact-info" style="margin-top:2rem;">
-            <div class="contact-card">
-              <div class="contact-card__label">Yhteyshenkilö</div>
-              <p>Heikki Saarikoski</p>
-            </div>
-            <div class="contact-card">
-              <div class="contact-card__label">Puhelin</div>
-              <a href="tel:+358405551669">040 555 1669</a>
-            </div>
-            <div class="contact-card">
-              <div class="contact-card__label">Sähköposti</div>
-              <a href="mailto:khs@khs.fi">khs@khs.fi</a>
-            </div>
-            <div class="contact-card">
-              <div class="contact-card__label">Osoite</div>
-              <p>Haanpäänkatu 7<br>38700 Kankaanpää</p>
-            </div>
+          <p class="section__eyebrow">KHS LVI-palvelu Oy</p>
+          <h2 class="section__title">Yhteystiedot</h2>
+          <div class="contact-cards" style="margin-top:2rem">
+            <div class="contact-card"><div class="contact-card__label">Yhteyshenkilö</div><p>Heikki Saarikoski</p></div>
+            <div class="contact-card"><div class="contact-card__label">Puhelin</div><a href="tel:+358405551669">040 555 1669</a></div>
+            <div class="contact-card"><div class="contact-card__label">Sähköposti</div><a href="mailto:khs@khs.fi">khs@khs.fi</a></div>
+            <div class="contact-card"><div class="contact-card__label">Osoite</div><p>Haanpäänkatu 7<br>38700 Kankaanpää</p></div>
           </div>
-          <div class="info-box" style="margin-top:2rem;">
-            <p><strong>Myymälä</strong></p>
-            <p>Palvelemme teitä sovitusti osoitteessa Haanpäänkatu 7, Kankaanpää.</p>
+          <div class="info-box" style="margin-top:2rem"><p><strong>Myymälä</strong></p><p>Palvelemme sovitusti osoitteessa Haanpäänkatu 7.</p></div>
+          <div class="map-embed reveal" style="margin-top:2rem">
+            <iframe title="KHS LVI-Palvelu sijainti kartalla" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=61.810498,22.367460&hl=fi&z=15&output=embed"></iframe>
           </div>
         </div>
         <div class="contact-form reveal">
-          <h3>Ottakaa minuun yhteyttä!</h3>
+          <h3>Ottakaa minuun yhteyttä</h3>
           <form id="contact-form">
-            <div class="form-group">
-              <label for="name">Nimi</label>
-              <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-              <label for="contact">Sähköposti tai puhelinnumero</label>
-              <input type="text" id="contact" name="contact" required>
-            </div>
-            <div class="form-group">
-              <label for="message">Viesti</label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit" class="btn btn--primary" style="width:100%;">Lähetä viesti</button>
+            <div class="form-group"><label for="name">Nimi</label><input type="text" id="name" name="name" required></div>
+            <div class="form-group"><label for="contact">Sähköposti tai puhelin</label><input type="text" id="contact" name="contact" required></div>
+            <div class="form-group"><label for="message">Viesti</label><textarea id="message" name="message" required></textarea></div>
+            <button type="submit" class="btn btn--primary" style="width:100%">Lähetä viesti</button>
           </form>
         </div>
       </div>
+
+      <!-- Reviews on contact page too -->
+      <section class="reviews reveal" style="margin-top:4rem;padding:3rem 0 0;border:none">
+        <div class="reviews__header">
+          <div>
+            <div class="reviews__google-badge">
+              <svg class="reviews__google-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+              <span class="reviews__google-label">Google-arvostelut</span>
+            </div>
+            <h2 class="section__title">5,0 / 5 tähteä</h2>
+          </div>
+          <div class="reviews__score">
+            <span class="reviews__score-num">5,0</span>
+            <p class="reviews__count">2 arvostelua Google Mapsissa</p>
+          </div>
+        </div>
+        <div class="reviews__grid">
+          <article class="review-card">
+            <blockquote class="review-card__text">"Erittäin miellyttävää ja hyvää, ammattitaitoista palvelua. Koin ehkä parasta palvelua mitä voi kokea."</blockquote>
+            <span class="review-card__source">Google Maps · 5/5</span>
+          </article>
+        </div>
+        <div class="reviews__cta">
+          <a href="https://www.google.com/maps/search/?api=1&query=KHS+LVI-Palvelu+Oy+Haanp%C3%A4%C3%A4nkatu+7+Kankaanp%C3%A4%C3%A4" target="_blank" rel="noopener" class="btn btn--dark">Katso kaikki arvostelut</a>
+        </div>
+      </section>
     </div>
   </main>
 
@@ -107,35 +104,16 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
-          <div class="footer__logo"><img src="assets/KHS_logo_web.png" alt="KHS LVI-Palvelu"></div>
-          <p>KHS LVI-palvelu Oy tarjoaa kattavat LVI-palvelut Pohjois-Satakunnassa ja valtakunnallisesti.</p>
+          <div class="wordmark wordmark--light"><span class="wordmark__khs">KHS</span><span class="wordmark__sub">LVI-Palvelu</span></div>
+          <p>Premium LVI-palvelut Pohjois-Satakunnassa.</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=KHS+LVI-Palvelu+Oy+Kankaanp%C3%A4%C3%A4" target="_blank" rel="noopener" class="footer__rating"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>5,0 · 2 Google-arvostelua</a>
         </div>
-        <div>
-          <h4>Sivut</h4>
-          <ul>
-            <li><a href="index.html">Etusivu</a></li>
-            <li><a href="palvelut.html">Palvelut</a></li>
-            <li><a href="lammitysratkaisut.html">Lämmitysratkaisut</a></li>
-            <li><a href="referenssit.html">Referenssit</a></li>
-            <li><a href="laskutus.html">Laskutus</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Yhteystiedot</h4>
-          <ul>
-            <li><a href="tel:+358405551669">040 555 1669</a></li>
-            <li><a href="mailto:khs@khs.fi">khs@khs.fi</a></li>
-            <li>Haanpäänkatu 7, 38700 Kankaanpää</li>
-          </ul>
-        </div>
+        <div><h4>Sivut</h4><ul><li><a href="index.html">Etusivu</a></li><li><a href="palvelut.html">Palvelut</a></li><li><a href="lammitysratkaisut.html">Lämmitys</a></li><li><a href="referenssit.html">Referenssit</a></li><li><a href="laskutus.html">Laskutus</a></li></ul></div>
+        <div><h4>Yhteystiedot</h4><ul><li><a href="tel:+358405551669">040 555 1669</a></li><li><a href="mailto:khs@khs.fi">khs@khs.fi</a></li><li>Haanpäänkatu 7, Kankaanpää</li></ul></div>
       </div>
-      <div class="footer__bottom">
-        <span>KHS LVI-palvelu Oy &copy; 2026</span>
-        <span>Heikki Saarikoski</span>
-      </div>
+      <div class="footer__bottom"><span>KHS LVI-palvelu Oy © 2026</span><span>Heikki Saarikoski</span></div>
     </div>
   </footer>
-
   <script src="js/main.js"></script>
 </body>
 </html>
