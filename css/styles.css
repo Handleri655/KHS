@@ -734,6 +734,45 @@ a {
   transform: translateY(0);
 }
 
+/* ─── Why KHS ─── */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.why-card {
+  padding: 2rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: box-shadow 0.35s var(--ease), border-color 0.35s;
+}
+
+.why-card:hover {
+  border-color: rgba(184, 135, 90, 0.35);
+  box-shadow: var(--shadow-soft);
+}
+
+.why-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  color: var(--ink);
+}
+
+.why-card p {
+  font-size: 0.9375rem;
+  color: var(--slate);
+  line-height: 1.75;
+}
+
+@media (max-width: 700px) {
+  .why-grid { grid-template-columns: 1fr; }
+}
+
 /* ─── Services ─── */
 .services-grid {
   display: grid;
